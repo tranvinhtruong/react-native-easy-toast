@@ -142,15 +142,17 @@ Toast.propTypes = {
         'bottom',
     ]),
     textStyle: Text.propTypes.style,
-    positionValue:PropTypes.number,
-    fadeInDuration:PropTypes.number,
-    fadeOutDuration:PropTypes.number,
-    opacity:PropTypes.number
+    marginBottom: PropTypes.number,
+    positionValue: PropTypes.number,
+    fadeInDuration: PropTypes.number,
+    fadeOutDuration: PropTypes.number,
+    opacity: PropTypes.number
 }
 
 Toast.defaultProps = {
     position: 'bottom',
     textStyle: styles.text,
+    marginBottom: 24,
     positionValue: 120,
     fadeInDuration: 500,
     fadeOutDuration: 500,
