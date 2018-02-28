@@ -96,13 +96,13 @@ export default class Toast extends Component {
                 pos = height / 2;
                 break;
             case 'bottom':
-                pos = height - this.props.positionValue;
+                pos = this.props.marginBottom;
                 break;
         }
 
         const view = this.state.isShow ?
             <View
-                style={[styles.container, { top: pos }]}
+                style={[styles.container, this.props.position === 'bottom' ? { bottom: pos } : { top: pos }]}
                 pointerEvents="none"
             >
                 <Animated.View
